@@ -1,0 +1,18 @@
+<h1>forecast html file {{city}}</h1>
+
+<div class="btn-group" role="group" aria-label="...">
+  <a href="#/city/2"><button type="button" class="btn btn-default">2 Days</button></a>
+  <a href="#/city/5"><button type="button" class="btn btn-default">5 Days</button></a>
+  <a href="#/city/7"><button type="button" class="btn btn-default">7 Days</button></a>
+</div>
+<br/><br/>
+<ul>
+<li ng-repeat="w in weatherResult.list" style="list-style: none">
+	<div class="row">
+		<div class="col-md-12">
+		<forecast-directive weather-day = "w" convert-to-f="convertToF(degK)" convert-to-date="convertToDate(dt)" weather-date="date">
+		</forecast-directive>
+		</div>
+	</div>
+</li>
+</ul>

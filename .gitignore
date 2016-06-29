@@ -1,0 +1,10 @@
+#################
+## Eclipse
+#################
+
+.project
+.metadata
+local.properties
+.classpath
+.settings/
+node_modules/
